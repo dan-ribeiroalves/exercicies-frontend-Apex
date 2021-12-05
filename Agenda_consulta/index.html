@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de consultas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Agende sua consulta</h1>
+            <form action="">
+               <div >
+                    <label for="tutorname">Digite seu nome</label>
+                    <input type="text" id="tutorname" name="tutorname" placeholder="Digíte seu nome">
+               </div>
+                
+              <div>
+                    <label for="namepet">Qual o nome do seu Pet?</label>
+                    <input type="text" id="namepet" name="namepet" placeholder="Digíte o nome do seu Pet">
+              </div>
+    
+             <div>
+                    <label for="">Qual a idade do seu Pet</label>
+                    <input type="text" name="agepet" id="agepet" placeholder="Idade do seu Pet">
+             </div>
+    
+                <div>
+                    <label for="animalspecies">Qual a espécie?</label>
+                    <select id="animalspecies" name="animalspecies">
+                        <option selected>Qual é seu pet?</option>
+                        <option value="dog">Cão</option>
+                        <option value="cat">Gato</option>
+                        <option value="bird">Pássaro</option>
+                        <option value="reptile">Réptil</option>
+                        <option value="others">Outros</option>
+                    </select>
+                </div>
+                <label for="procedure">Selecione o tipo de procedimento</label>
+                <select id="procedure" name="procedure" id="procedure">
+                    <option selected>Selecione o procedimento</option>
+                    <option value="consultation">Consulta</option>
+                    <option value="vaccine">Vacinas</option>
+                    <option value="exams">Exames</option>
+                    <option value="minorsurgeries">Pequenas cirurgias</option>
+                </select>
+                <div>
+                    <label for="consultationdate">Selecione a data</label>
+                    <input type="date" name="consultationdate" id="consultationdate">
+                </div>
+                <input type="button" value="Agendar" onclick="execute()">       
+            </form>
+        </div>
+
+        <p>
+            Aqui aparecerá os dados
+        </p>
+    <script src="js/index.js"></script>   
+</body>
+</html>

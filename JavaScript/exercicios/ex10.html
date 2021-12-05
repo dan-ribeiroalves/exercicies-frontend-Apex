@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const grade1 = parseFloat(window.prompt('Informe a primeira nota: '))
+        const grade2 = parseFloat(window.prompt('Informe a segunda nota: '))
+        let schoolAverage = (grade1 + grade2) / 2
+        let schoolConcept = '0'
+        let conceptMessage = '0'
+
+        if(schoolAverage >=9){
+            schoolConcept = 'A'
+            conceptMessage = 'APROVADO!'
+        }
+        else if(schoolAverage >=7.5){
+            schoolConcept = 'B'
+            conceptMessage = 'APROVADO!'
+        }
+        else if(schoolAverage >=6 ){
+            schoolConcept = 'C'
+            conceptMessage = 'APROVADO!'
+        }
+        else if(schoolAverage >=4 ){
+            schoolConcept = 'D'
+            conceptMessage = 'REPROVADO!'
+        }
+        else{schoolAverage >=0
+            schoolConcept = 'E'
+            conceptMessage = 'REPROVADO!'
+        }
+        
+        alert('As notas foram '+ grade1 +' e '+ grade2+', a média alcançada foi'+' '+ schoolAverage.toFixed(1)+ ' com o conceito de '+ schoolConcept+ ' ' + conceptMessage)
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employeeSalary = parseFloat(window.prompt('Informe o salário do funcinário:'))
+        let increasePercentage = 0
+        let amountSalaryIncrease = 0
+        let newEmployeeSalary = 0
+
+        if(employeeSalary <= 280){
+            increasePercentage = 20
+        }
+        else if(employeeSalary <= 700){
+            increasePercentage = 15
+        }
+        else if(employeeSalary <= 1500){
+            increasePercentage = 10
+        }
+        else{
+            increasePercentage = 5
+        }
+
+        alert('O salario original é de: R$' + employeeSalary.toFixed(2) + ' e terá um aumento de: '+increasePercentage.toFixed(2) +'%')
+
+        increasePercentage = increasePercentage / 100
+        amountSalaryIncrease = increasePercentage * employeeSalary
+        newEmployeeSalary = employeeSalary + amountSalaryIncrease
+
+        alert('O aumento foi de: R$' + amountSalaryIncrease.toFixed(2) + ' e agora o novo salário é de: R$'+ newEmployeeSalary.toFixed(2))
+    </script>
+</body>
+</html>

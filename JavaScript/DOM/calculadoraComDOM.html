@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="subtract()">
+    <input type="button" value="x" onclick="multiply()">
+    <input type="button" value="÷" onclick="share()">
+    <div id="result">Resultado</div>
+    
+    <script>
+        
+        function sum(){
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.getElementById('txtn2')
+            let result = window.document.getElementById('result')
+            let number1 = Number(tn1.value)
+            let number2 = Number(tn2.value)
+            let sum = number1 + number2
+            result.innerHTML = `A soma de ${number1} e ${number2} é igual a <strong>${sum}</strong>`
+        }
+        function subtract(){
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.getElementById('txtn2')
+            let result = window.document.getElementById('result')
+            let number1 = Number(tn1.value)
+            let number2 = Number(tn2.value)
+            let subtract = number1 - number2
+            result.innerHTML = `A subtração de ${number1} e ${number2} é igual a <strong>${subtract}</strong>`
+        }
+        function multiply(){
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.getElementById('txtn2')
+            let result = window.document.getElementById('result')
+            let number1 = Number(tn1.value)
+            let number2 = Number(tn2.value)
+            let multiply = number1 * number2
+            result.innerHTML = `A multiplicação de ${number1} e ${number2} é igual a <strong>${multiply}</strong>`
+        }
+        function share(){
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.getElementById('txtn2')
+            let result = window.document.getElementById('result')
+            let number1 = Number(tn1.value)
+            let number2 = Number(tn2.value)
+            let share = number1 / number2
+            result.innerHTML = `A divisão de ${number1} e ${number2} é igual a <strong>${share}</strong>`
+        }
+
+
+    </script>
+
+</body>
+</html>

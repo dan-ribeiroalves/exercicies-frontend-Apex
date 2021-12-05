@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const studyShift = window.prompt('Em qual turno você estuda? Digite "M" para Matutino, "V" para Vespertino, e "N" para Noturno').toUpperCase()
+        const morning = 'M' 
+        const afternoon = 'V' 
+        const night = 'N'
+        
+        if(studyShift == morning){
+            alert('Bom dia!')
+        }
+        else if( studyShift == afternoon){
+            alert('Boa tarde!')
+        }
+        else if( studyShift == night){
+            alert('Boa noite!')
+        }
+        else{
+            alert('Valor inválido')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const userChosenConversion = parseInt(window.prompt('Dígite a opção desejada:.\n'+'1 - Para converter de Real para Dólar.\n'+'2 - Para converter de Dólar para Real.\n'+'3 - Para converter de Real para Euro.\n'+'4 - Para converter de Euro para Real'))
+        if (userChosenConversion >4) {    
+           alert('Digite uma opção válida.') 
+        } else {                    
+        const valueToConvert = parseFloat(window.prompt('Informe o valor a ser convertido:'))             
+        if(isNaN(valueToConvert)){
+            alert('Digite um valor válido.')              
+        } else {                         
+        switch (userChosenConversion) {
+            case 1:                                 
+                alert('Seu saldo é de: U$'+(valueToConvert/5.68).toFixed(2))
+                break;
+            case 2:                    
+                alert('Seu saldo é de: R$'+(valueToConvert*5.68).toFixed(2))
+                break
+            case 3:                 
+                alert('Seu saldo é de: €'+(valueToConvert/6.59).toFixed(2))
+                break             
+            default:             
+                alert('Seu saldo é de: R$'+(valueToConvert*6.59).toFixed(2))
+                break;               
+                
+        }
+        
+    }
+
+}
+
+
+    </script>
+</body>
+</html>

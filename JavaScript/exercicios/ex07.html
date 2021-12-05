@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = parseInt(window.prompt('Digite o primeiro número: ' ))
+        let number2 = parseInt(window.prompt('Digite o segundo número: '))
+        let numberaux = number1
+         
+        alert('O primeiro número é ' + number1 + ' e o segundo é ' + number2)
+        
+        alert('Vamos inverter?')
+        const answer = window.prompt('Digite "S" para Sim ou "N" para Não').toUpperCase()
+        const positiveAnswer = 'S' 
+        const negativeAnswer = 'N' 
+        
+        if(answer == positiveAnswer){
+            numberaux = number2
+            number2 = number1
+            number1 = numberaux
+            alert('Números invertidos, agora o primeiro número é '+ number1+' e o segundo é '+ number2 )    
+        }
+        else if (answer == negativeAnswer){
+            alert('Números não invertidos')
+        }
+        else{
+            alert('Opção invalida')
+        }
+
+    </script>
+</body>
+</html>

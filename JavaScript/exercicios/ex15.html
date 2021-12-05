@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let isVoting = true
+    let aleVotes = 0
+    let caioVotes = 0
+    let geVotes = 0
+    let taliVotes = 0
+    let option = 0
+
+
+
+    while (isVoting) {
+        option = parseInt(prompt(`
+        1 - Alessandra 
+        2 - Caio 
+        3 - Geraldo 
+        4 - Talita 
+        5- sair 
+        `))
+        switch (option) {
+            case 1:
+                aleVotes++
+
+                break
+            case 2:
+                caioVotes++
+
+                break
+            case 3:
+                geVotes++
+
+                break
+            case 4:
+                taliVotes++
+
+                break
+            case 5:
+                isVoting = false
+
+                break
+
+            default:
+                alert('invalid option')
+                break
+        }
+    }
+    document.write(`
+    1 - Alessandra: ${aleVotes}<br>
+    2 - Caio: ${caioVotes}<br> 
+    3 - Geraldo: ${geVotes}<br> 
+    4 - Talita: ${taliVotes}<br> 
+    `)
+                            
+    </script>
+</body>
+</html>

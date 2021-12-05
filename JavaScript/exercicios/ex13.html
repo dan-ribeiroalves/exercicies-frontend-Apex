@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userNumber = parseInt(window.prompt('Informe qual a tabuada que será exibida: '))
+        if(userNumber == 0){
+            alert('Por favor, digite um número')
+        }else{
+        const userMathOperation = parseInt(window.prompt('Qual será a operação matemática?\n 1 - Adição\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão'))    
+        if (userMathOperation == 1) {
+            for(let i = 0; i <=userNumber; i++){
+                console.log(userNumber+'+'+i+'='+(userNumber+i))
+            }       
+        }else if(userMathOperation == 2 ){
+            for(let i = 0; i <=userNumber; i++){
+                console.log(userNumber+'-'+i+'='+(userNumber-i))
+            }   
+        }else if(userMathOperation == 3){
+            for(let i = 0; i <=userNumber; i++){
+                console.log(userNumber+'x'+i+'='+(userNumber*i))
+            }   
+        }else{           
+            for(let i = 0 ; i <=userNumber; i++){                               
+                    console.log((userNumber*i)+'÷'+userNumber+'='+(userNumber*i)/userNumber)
+                }
+            }
+              
+        }
+
+        
+    </script>
+</body>
+</html>

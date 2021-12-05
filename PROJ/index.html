@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Cadastre seu Produto</h1>
+        <form id="register-form">
+            <div class="validation">
+                <label for="product">Infome o produto</label>
+                <input type="text" name="product" id="product" placeholder="Informe o produto" data-min-length="3">
+            </div>
+            <div class="validation">
+                <label for="saleprice">Infome o preço de venda</label>
+                <input type="text" name="salesprice" id="salesprice" placeholder="Informe o preço de venda">
+            </div>
+            <div class="validation">
+                <label for="costprice">Infome o preço de custo do produto</label>
+                <input type="text" name="costprice" id="costprice" placeholder="Informe o preço de custo">
+            </div>
+            <div class="validation">
+                <label for="internalcode">Infome o código interno</label>
+                <input type="text" name="internalcode" id="internalcode" placeholder="Informe o código">
+            </div>
+            <div class="validation">
+                <label for="salessession">Informe a sessão de venda</label>
+                <input type="text" name="salessession" id="salessession" placeholder="Informe a sessão de venda">
+            </div>
+        </form>
+        <input type="button" value="Cadastrar" id="btn-button">
+    </div>
+    <div id="table">
+        <table id="renderedTable">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <template id="template1">
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Preço de custo</th>
+                <th>Código interno</th>
+                <th>Sessão de venda</th>
+            </tr>
+        </template>
+        <template id="template2">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

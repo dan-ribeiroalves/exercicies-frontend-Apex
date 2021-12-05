@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /// pegar o primeiro numero do usuario
+        const firstNumber = parseInt(window.prompt('digite o primeiro numero'))
+        /// pegar o segundo numero do usuario
+        const secondNumber = parseInt(window.prompt('digite o segundo numero'))
+        let countEvenNumbers = 0
+        let countOddNumbers = 0
+        /// percorrer a cadeia de numeros entre o primeiro e o segundo
+        for (let i = firstNumber; i <= secondNumber; i++) {
+            /// Verificar quantos são pares e quantos impares
+            if (i % 2 === 0) {
+                countEvenNumbers++
+            } else {
+                countOddNumbers++
+            }
+        }
+        // exibir as quantidades
+        document.write(`o montante de numeros pares é: ${countEvenNumbers}<br> o montante de impares é: ${countOddNumbers}`)
+    </script>                
+    
+</body>
+</html>
